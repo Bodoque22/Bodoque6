@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slope Unblocked</title>
+    <style>
+        body { margin:0; background:#000; color:#0f0; font-family:Arial, sans-serif; overflow:hidden; }
+        iframe { width:100%; height:100vh; border:none; }
+        .panel { 
+            position:fixed; top:10px; left:10px; background:rgba(0,0,0,0.9); 
+            padding:15px; border-radius:10px; z-index:9999; border:2px solid #0f0; 
+            max-width:280px; text-align:center;
+        }
+        button { 
+            margin:5px; padding:12px; background:#0f0; color:#000; 
+            border:none; border-radius:5px; cursor:pointer; font-weight:bold; width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <h2>🏂 Slope Unblocked</h2>
+        <button onclick="alert('Presiona F11 para pantalla completa')">Pantalla Completa (F11)</button>
+        <p><small>Usa las flechas ← → o A/D para moverte<br>Espera que cargue completamente</small></p>
+    </div>
+
+    <!-- Mirror estable para escuela -->
+    <iframe src="https://slope-unblocked-10x.github.io/" allowfullscreen></iframe>
+
+    <script>
+        // Ayuda con fullscreen
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'F11') {
+                alert('¡Modo pantalla completa activado!');
+            }
+        });
+    </script>
+</body>
+</html>
